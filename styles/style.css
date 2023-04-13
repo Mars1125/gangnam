@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Roboto+Flex:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1;100;200;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*border: solid 1px #000000;
+  font-family: 'Abel', sans-serif;
+font-family: 'Blinker', sans-serif;*/
+}
+.promocion {
+  background-color: #f9beee;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #504e4e;
+}
+.navbar {
+  --bs-navbar-brand-margin-end: 1rem !important;
+  --bs-navbar-padding-x: 0.5rem !important;
+  --bs-navbar-brand-padding-y: 0 !important;
+  --bs-navbar-padding-y: 0.5rem !important;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 9000 !important;
+  transition: all 0.55s ease !important;
+  top: 0;
+}
+.navbar-nav {
+  gap: 1.3rem;
+  transition: all 0.55s ease !important;
+  top: 0;
+}
+.sticky {
+  transition: all 0.15s ease !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  --bs-navbar-padding-x: 0.5rem !important;
+}
+
+.nav-link {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #333;
+  z-index: 7000 !important;
+}
+.logo {
+  max-width: 250px;
+}
+.input-buscar {
+  backdrop-filter: blur(20px);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: #111;
+  background: rgba(231, 232, 234, 0.5);
+  background-image: none !important;
+  border: 1px solid rgba(231, 232, 234, 0.5);
+  border-radius: 10px;
+  height: 40px !important;
+}
+
+.boton-nav:link {
+  color: #265301;
+}
+li{
+  background-color: none !important;
+}
+.lista-nav-li{
+  
+  list-style: none !important;
+  text-decoration: none;
+}
+.subtitulo {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  font-size: 30px;
+  line-height: 24px;
+  color: #333;
+}
+
+.body-item-vendidos {
+  background-color: rgba(255, 255, 255, 0.395) !important;
+}
+.img-productos-vendidos {
+  transition: all 500ms ease;
+}
+.img-productos-vendidos:hover {
+  transform: scale(1.1);
+}
+.text-item-vendidos {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #504e4e;
+  text-decoration: none;
+}
+.boton-productos-vendidos {
+  letter-spacing: 0.1em;
+  background-color: rgba(255, 255, 255, 0.395) !important;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  border: solid 1px #7a7a7ac2;
+  transition: all 500ms ease;
+}
+.boton-productos-vendidos:hover {
+  background-color: #ea9fa6 !important;
+  color: #fff;
+  border: none;
+}
+
+.clasificacion {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525150;
+}
+
+.card-img-overlay {
+  background-image: linear-gradient(
+    to top,
+    rgba(4, 4, 4, 0.541),
+    rgba(255, 255, 255, 0)
+  ) !important;
+}
+.text-card-cuadricula {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+}
+.title-card-cuadricula {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+.card {
+  border: none !important;
+}
+.card-body {
+  background-color: rgba(250, 250, 250, 0.4) !important;
+  backdrop-filter: blur(10px);
+}
+.card-nombre {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Roboto Flex", sans-serif;
+  color: #504e4e;
+  text-align: center;
+  margin-bottom: 5px !important;
+}
+.card-descripcion {
+  font-family: "Roboto Flex", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #504e4e;
+  margin-bottom: 5px !important;
+}
+.card-precio {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Inter", sans-serif;
+  color: #504e4e;
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+.btn-agregar {
+  font-family: "Inter", sans-serif;
+  background-color: #f067d99e;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.contenedor-marcas {
+  background-color: #f5e1e2;
+  /*background: linear-gradient(70deg, #fbf3eb 40%, #ffe3c8 100%);*/
+}
+.card-title-tip {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  color: #504e4e;
+}
+.lista-tip {
+  text-decoration: none;
+  outline: none;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 1rem;
+}
+.card-body-tip {
+  background-color: #f3f3f3e2 !important;
+}
+.newsletter {
+  background-image: url("../src/suscribe.png") !important;
+  width: 100%;
+  height: 280px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.text-newsletter {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+}
+.text-sub-newsletter {
+  font-family: "Blinker", sans-serif;
+}
+.input-newsletter {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 15px;
+  background-color: rgba(250, 250, 250, 0.4) !important;
+}
+.btn-sub{
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  background-color: #ea9fa6 !important;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+.btn-sub:hover {
+  letter-spacing: 0.1em;
+  background-color: rgba(255, 255, 255, 0.395) !important;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  border: solid 1px #7a7a7ac2;
+  transition: all 500ms ease;
+  color: #3f3d3d;
+}
+.footer {
+  background-color: #f7f7f7;
+}
+
+.span-footer {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #504e4e; 
+}
+
+.footer-list {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: 'Blinker', sans-serif;
+  color: #504e4e; 
+}
+.formas-pago{
+  text-decoration: none;
+  list-style: none !important;
+}
+li {
+  margin-top: 5px !important;
+}
+
+hr {
+  color: #000000;
+  height: 2px;
+}

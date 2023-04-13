@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.contenedor-registrarse {
+  background-image: url("../src/banner-horizontal5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contenedor-formulario {
+  background-color: #f9f8f89c !important;
+}
+.input-formulario {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 15px;
+  background-color: rgba(250, 250, 250, 0.4) !important;
+}
+.input-formulario::placeholder {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 15px;
+}
+.text-formulario {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #3f3d3d;
+}
+.text-formulario-check {
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #3f3d3d;
+}
+.boton-registro {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  background-color: #ea9fa6 !important;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+.boton-registro:hover {
+  letter-spacing: 0.1em;
+  background-color: rgba(255, 255, 255, 0.395) !important;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  border: solid 1px #7a7a7ac2;
+  transition: all 500ms ease;
+  color: #3f3d3d;
+}
+/*Formulario de Sesion*/
+.contenedor-sesion {
+  background-image: url("../src/banner-horizontal6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+.text-formulario-a {
+
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ea9fa6!important;
+}
