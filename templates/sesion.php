@@ -1,5 +1,5 @@
 <?php
-include "../php/conexion.php";
+/*include "../php/conexion.php";
 error_reporting(0);
 session_start();
 
@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
     $apPaterno = $_POST["apPaterno"];
     $apMaterno = $_POST["apMaterno"];
     $fechaNacimiento = $_POST["fechaNacimiento"];
-    $correo = $_POST["correo"];
+    $correo = $_POST["correo"]; 
     $contraseña = $_POST["contraseña"];
     $telefono = $_POST["telefono"];
 
@@ -47,7 +47,7 @@ if (isset($_POST["submit"])) {
         echo "<script>alert('las contraseñas no coinciden')</script>";
     }
 
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +58,7 @@ if (isset($_POST["submit"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/registroYsesion.css">
     <script src="../js/scrollreveal.js"></script>
     <title>Gangnam</title>

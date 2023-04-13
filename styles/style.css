@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*border: solid 1px #000000;
+  border: solid 1px #000000; /*
   font-family: 'Abel', sans-serif;
 font-family: 'Blinker', sans-serif;*/
 }
@@ -70,11 +70,10 @@ font-family: 'Blinker', sans-serif;*/
 .boton-nav:link {
   color: #265301;
 }
-li{
+li {
   background-color: none !important;
 }
-.lista-nav-li{
-  
+.lista-nav-li {
   list-style: none !important;
   text-decoration: none;
 }
@@ -151,44 +150,6 @@ li{
   background-color: rgba(250, 250, 250, 0.4) !important;
   backdrop-filter: blur(10px);
 }
-.card-nombre {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: "Roboto Flex", sans-serif;
-  color: #504e4e;
-  text-align: center;
-  margin-bottom: 5px !important;
-}
-.card-descripcion {
-  font-family: "Roboto Flex", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: #504e4e;
-  margin-bottom: 5px !important;
-}
-.card-precio {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  font-family: "Inter", sans-serif;
-  color: #504e4e;
-  text-align: center;
-  margin-bottom: 0px !important;
-}
-.btn-agregar {
-  font-family: "Inter", sans-serif;
-  background-color: #f067d99e;
-  color: #fff;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-}
 
 .contenedor-marcas {
   background-color: #f5e1e2;
@@ -230,7 +191,7 @@ li{
   font-size: 15px;
   background-color: rgba(250, 250, 250, 0.4) !important;
 }
-.btn-sub{
+.btn-sub {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   background-color: #ea9fa6 !important;
   color: #fff;
@@ -254,7 +215,7 @@ li{
   font-weight: 700;
   font-size: 15px;
   line-height: 15px;
-  color: #504e4e; 
+  color: #504e4e;
 }
 
 .footer-list {
@@ -263,10 +224,10 @@ li{
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  font-family: 'Blinker', sans-serif;
-  color: #504e4e; 
+  font-family: "Blinker", sans-serif;
+  color: #504e4e;
 }
-.formas-pago{
+.formas-pago {
   text-decoration: none;
   list-style: none !important;
 }

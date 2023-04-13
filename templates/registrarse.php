@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/registroYsesion.css">
   <script src="../js/scrollreveal.js"></script>
   <title>Gangnam</title>
@@ -18,7 +18,7 @@
     <?php
     require_once('../templates/nav.php');
     ?>
-  </header>
+  </header> 
   <div class="registro mb-5">
     <p class="text-center subtitulo pt-5 mt-5 pb-4">Registrarse</p>
     <div class="d-flex container justify-content-md-center mt-3 mb-5 px-4 ">
