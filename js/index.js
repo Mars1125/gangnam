@@ -34,3 +34,8 @@ sr.reveal(".tip", {
     origin: "right",
     distance: "-70px",
   });
+  sr.reveal("#item-producto", {
+    duration: 4000,
+    origin: "top",
+    distance: "-60px",
+  });

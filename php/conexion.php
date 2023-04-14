@@ -2,7 +2,7 @@
 $server="localhost";
 $user="root";
 $pass="";
-$database="carrito";
+$database="gangnam";
 $conexion =
 mysqli_connect($server,$user,$pass,$database);
 if(!$conexion){
