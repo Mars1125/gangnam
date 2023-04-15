@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Roboto+Flex:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1;100;200;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400&display=swap");
+.text-identidad {
+  font-family: "Abel", sans-serif;
+  color: #504e4e;
+}
+.text-title-identidad {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+.lista-valores,
+li {
+  text-decoration: none !important;
+  list-style: none;
+  font-family: "Abel", sans-serif;
+  color: #504e4e;
+}
+.contenedor-identidad-valores {
+  background-color: #fbf3eb;
+}
+.eslogan-identidad {
+    font-family: "Inter", sans-serif;
+    color: #504e4e;
+    font-weight: 400;
+}
+.contenedor-identidad-objetivos{
+  background-color: #faf1f1;
+}
+.contenedor-acercade{
+  background-color: #fbf3eb;
+}

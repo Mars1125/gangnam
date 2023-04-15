@@ -19,10 +19,10 @@
           <a class="nav-link active" aria-current="page" href="#">MAQUILLAGE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">LANZAMIENTOS</a>
+          <a class="nav-link active" aria-current="page" href="templates/acercade.php">ACERCA DE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">IDENTIDAD</a>
+          <a class="nav-link active" aria-current="page" href="templates/identidad.php">IDENTIDAD</a>
         </li>
 
       </ul>
