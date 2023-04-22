@@ -10,6 +10,8 @@
     <script src="../js/scrollreveal.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/catalogo.css">
+    <link rel="stylesheet" href="styles/carrito.css">
+
 
     <title>Gangnam</title>
 </head>

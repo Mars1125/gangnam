@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*border: solid 1px #000000; 
+  border: solid 1px #000000; /*
   font-family: 'Abel', sans-serif;
 font-family: 'Blinker', sans-serif;*/
 }
@@ -161,7 +161,7 @@ li {
   font-size: 30px;
   color: #504e4e;
 }
-.lista-tip {
+.lista-tip {}}}
   text-decoration: none;
   outline: none;
   font-family: "Sofia Sans Semi Condensed", sans-serif;
@@ -188,7 +188,7 @@ li {
 }
 .input-newsletter {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
-  font-size: 15px;
+  font-size: 15px;+´}
   background-color: rgba(250, 250, 250, 0.4) !important;
 }
 .btn-sub {
@@ -239,3 +239,9 @@ hr {
   color: #000000;
   height: 2px;
 }
+
+/*carrito*/
+.offcanvas{
+
+}
+

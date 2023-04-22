@@ -20,13 +20,39 @@
         ?>
     </header>
     <div class="registro mb-5">
-        <div class="d-flex container justify-content-md-center mt-5 mb-5 px-4 ">
-            <p class="text-center mt-5">Acerca De</p>
-            <div class="row mt-3">
-                <div class="col-6 contenedor-acercade">
-                    
+        <div class="d-flex container-fluid justify-content-center mt-5 mb-5">
+            <div class="row contenedor-acercade">
+                <div class="col-lg-6 col-md-6 col-sm-12 contenedor-acercade px-5 pt-5">
+                    <p class="px-4 pt-4 text-title-identidad">Historia</p>
+                    <p class="p-4 text-identidad pb-5">Había dos estudiantes universitarios llamados Marina y Daniel que
+                        se conocieron en la universidad
+                        mientras estudiaban Informática. A ambos les apasionaba el emprendimiento y siempre estaban
+                        hablando de ideas de negocio y oportunidades.
+                        Un día, mientras estudiaban juntos en la biblioteca, se dieron cuenta de que había una necesidad
+                        en el mercado local de su ciudad: no había una tienda especializada en productos cosméticos
+                        coreanos. A partir de esta idea, comenzaron a investigar y a desarrollar un plan de negocios.
+                    </p>
                 </div>
-                <div class="col-6"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 container-acercade-imagen">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <p class="text-center text-title-identidad mb-5 ">Fundacion de la empresa</p>
+                <div class="col text-acercade">
+                    <p class="">Fecha</p>
+                    <p>1 Marzo de 2023</p>
+                </div>
+                <div class="col text-acercade">
+                    <p>Fundadores</p>
+                    <p>Sanchez Campos M.M.<br> Villanueva Juárez B.D.</p>
+                </div>
+                <div class="col text-acercade">
+                    <p>Ubicacion</p>
+                    <p>Cuautitlan izcalli, México, México.</p>
+                </div>
+
             </div>
         </div>
     </div>

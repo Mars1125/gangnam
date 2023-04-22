@@ -31,5 +31,19 @@ li {
   background-color: #faf1f1;
 }
 .contenedor-acercade{
-  background-color: #fbf3eb;
+  background-color: #f9f1dd;
+}
+.container-acercade-imagen{
+  
+  background-image: url("../src/banner-extend-2.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.text-acercade {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #504e4e;
+  text-decoration: none;
 }
