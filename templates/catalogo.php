@@ -1,3 +1,10 @@
+<?php
+
+    include '../php/conexion.php';
+   // $conexion=mysqli_connect('localhost','id18960420_cibersegdb','QkrWkFCgvcw?$)#1','id18960420_ciberseg');
+      $conexion=mysqli_connect('localhost','root','','ciberseg');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +17,7 @@
     <script src="../js/scrollreveal.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/catalogo.css">
-    <link rel="stylesheet" href="styles/carrito.css">
+
 
 
     <title>Gangnam</title>
@@ -22,28 +29,42 @@
         require_once('../templates/nav.php');
         ?>
     </header>
-    <?php
-    require "../php/conexion.php";
-$busqueda=mysqli_query($conexion,  "SELECT * FROM producto");
-$numero= mysqli_num_rows($busqueda); ?>
+
+
+
     <div class="registro container mt-5 pt-5 mb-5 ">
         <p class="text-center subtitulo">Productos</p>
         <div class="row justify-content-center ">
-            <p class="text-center">Resultados(<?php echo $numero; ?>)</p>
-            <?php while ($resultado = mysqli_fetch_assoc($busqueda)){ ?> 
+        <?php 
+    		$sql="SELECT * from cursos WHERE Estado='Nuevo'";
+    		$result=mysqli_query($conexion,$sql);
+    		foreach ($result as $row) {?>
+            <?php
+            include('../php/conexion.php');
+            $resultado = $conexion->query("select * from producto");
+            while ($fila = mysqli_fetch_array($resultado)) { ?>
 
-            
-            <div class="card item-producto mt-4" style="width: 15rem" id="item-producto">
-                <img src="../src/productos/<?php echo $resultado["imagen"]; ?>.jpg" alt="" class="card-img-top rounded-top" />
-                <div class="card-body text-center">
-                    <p class="card-text card-nombre"><?php echo $resultado["nombre"]; ?></p>
-                    <p class="card-text card-descripcion">
-                    <?php echo $resultado["marca"]; ?>
-                    </p>
-                    <p class="card-text card-precio">$<?php echo $resultado["precio"]; ?></p>
+
+                <div class="card item-producto mt-4" style="width: 15rem" id="item-producto">
+
+                    <img src="../src/productos/<?php echo $fila["imagen"]; ?>.jpg" alt=""
+                        class="card-img-top rounded-top" />
+                    <div class="card-body text-center">
+                            <p class="card-text card-nombre">
+                                <?php echo $fila["nombre"]; ?>
+                            </p>
+                        </a>
+                        <p class="card-text card-descripcion">
+                            <?php echo $fila["marca"]; ?>
+                        </p>
+                        <p class="card-text card-precio">$
+                            <?php echo $fila["precio"]; ?>
+                        </p>
+                    </div>
+                    <a href="./detalleProducto.php?idProducto=<?php echo $fila['idProducto']; ?>" class="btn btn-agregar-producto col-12 rounded-1">Ver Producto</a>
+
                 </div>
-                <a href="#" class="btn btn-agregar-producto col-12 rounded-1">Agregar al carrito</a>
-            </div>
+
             <?php } ?>
         </div>
     </div>

@@ -39,15 +39,17 @@
             <a class="nav-link dropdown-toggle lista-nav-li btn p-1" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false"> <i class="fa-regular fa-user fa-lg"></i>
             </a>
-            <ul class="dropdown-menu lista-nav-li">
+
+            <ul class="dropdown-menu lista-nav-li" aria-labelledby="btn-sesion">
               <li><a href="./templates/sesion.php" class="dropdown-item btn px-2">Iniciar Sesion</a></li>
               <li><a href="./templates/registrarse.php" class="dropdown-item btn px-2">Registrarse</a></li>
+              <li><a href="php/logout.php" class="dropdown-item btn px-2">Cerrar sesión</a></li>
             </ul>
           </li>
 
         </div>
         <div class="col-lg-2 col-md-2 col-sm-4 d-sm-flex  p-0">
-          <a class="btn position-relative p-2" type="submit" href="./templates/carrito.php" data-bs-toggle="offcanvas"
+          <a class="btn position-relative p-2" type="submit" href="./templates/carrito.php"
             data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
               class="fa-solid fa-cart-shopping fa-lg"></i><span
               class="position-absolute top-2 start-800 translate-middle p-1 bg-danger rounded-circle">
@@ -57,17 +59,3 @@
     </div>
   </div>
 </nav>
-
-
-<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-  id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <div class="container">
-    <p class="carro-title mt-4 text-center">CARRO</p>
-    </div>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-
-  </div>
-</div>

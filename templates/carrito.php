@@ -1,3 +1,31 @@
+<?php
+include '../php/conexion.php';
+session_start();
+if (isset($_SESSION['carrito'])) {
+
+} else {
+    if (isset($_GET['idProducto'])) {
+        $nombre = "";
+        $precio = "";
+        $imagen = "";
+        $res = $conexion->query('select * from producto where id=' . $_GET['idProducto']);
+        $fila = mysqli_fetch_row($res);
+        $nombre = $fila['1'];
+        $precio = $fila['2'];
+        $imagen = $fila['3'];
+        $arreglo[] = array(
+            'Id' => $_GET['idProducto'],
+            'Nombre' => $nombre,
+            'Precio' => $precio,
+            'Imagen' => $imagen,
+            'Cantidad' => 1
+
+
+        );
+        $_SESSION['carrito'] = $arreglo;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,9 +47,42 @@
         require_once('../templates/nav.php');
         ?>
     </header>
-   
+    <div class="container mt-5 pt-5">
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                if (isset($_SESSION['carrito'])) {
+                    $arregloCarrito[] = $_SESSION['carrito'];
+                    for ($i = 0; $i < count($arregloCarrito); $i++) {
 
-    
+
+                        ?>
+                        <tr>
+                            <th scope="row">
+                                <img src="../src/productos/<?php $arregloCarrito[$i]['Imagen']?>.jpg" class=" img-fluid" alt="...">
+                            </th>
+                            <td>Mark</td>
+                            <td>
+                                <input type="text" value="<?php $arregloCarrito[$i]['Cantidad']; ?>">
+                            </td>
+                            <td>@mdo</td>
+                        </tr>
+                    <?php }
+                } ?>
+            </tbody>
+        </table>
+    </div>
+
+
     <?php
     require_once('../templates/footer.php');
     ?>
